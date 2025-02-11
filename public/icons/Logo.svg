@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 224 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <path d="M74.832,37.416C74.832,58.067 58.067,74.832 37.416,74.832C16.766,74.832 0,58.067 0,37.416C0,16.766 16.766,0 37.416,0C58.067,0 74.832,16.766 74.832,37.416Z" style="fill:white;fill-opacity:0.2;"/>
+    <g transform="matrix(1,0,0,1,98.7093,37.8933)">
+        <g>
+            <text x="0px" y="0px" style="font-family:'Poppins-ExtraBold', 'Poppins';font-weight:800;font-size:30px;fill:white;">Storage</text>
+            <text x="0px" y="30px" style="font-family:'Poppins-ExtraBold', 'Poppins';font-weight:800;font-size:30px;fill:white;">Drive</text>
+        </g>
+    </g>
+    <path d="M82.628,56.124C82.628,69.891 71.45,81.068 57.683,81.068C43.916,81.068 32.739,69.891 32.739,56.124C32.739,42.357 43.916,31.18 57.683,31.18C71.45,31.18 82.628,42.357 82.628,56.124Z" style="fill:white;"/>
+</svg>
