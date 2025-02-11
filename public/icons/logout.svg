@@ -1,3 +1,5 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.25 9V5.25C8.25 4.65326 8.48705 4.08097 8.90901 3.65901C9.33097 3.23705 9.90326 3 10.5 3H16.5C17.0967 3 17.669 3.23705 18.091 3.65901C18.5129 4.08097 18.75 4.65326 18.75 5.25V18.75C18.75 19.3467 18.5129 19.919 18.091 20.341C17.669 20.7629 17.0967 21 16.5 21H10.5C9.90326 21 9.33097 20.7629 8.90901 20.341C8.48705 19.919 8.25 19.3467 8.25 18.75V15M5.25 15L2.25 12M2.25 12L5.25 9M2.25 12H15" stroke="#FF7474" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;">
+    <path d="M8.25,9L8.25,5.25C8.25,4.653 8.487,4.081 8.909,3.659C9.331,3.237 9.903,3 10.5,3L16.5,3C17.097,3 17.669,3.237 18.091,3.659C18.513,4.081 18.75,4.653 18.75,5.25L18.75,18.75C18.75,19.347 18.513,19.919 18.091,20.341C17.669,20.763 17.097,21 16.5,21L10.5,21C9.903,21 9.331,20.763 8.909,20.341C8.487,19.919 8.25,19.347 8.25,18.75L8.25,15M5.25,15L2.25,12M2.25,12L5.25,9M2.25,12L15,12" style="fill:none;fill-rule:nonzero;stroke:rgb(8,229,147);stroke-width:1.5px;"/>
 </svg>

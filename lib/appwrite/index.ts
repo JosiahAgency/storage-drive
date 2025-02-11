@@ -8,16 +8,22 @@ export const createSessionClient = async () => {
     try {
         console.log('Creating a new session client...')
 
+        const allCookies = await cookies();
+        console.log('All cookies:', allCookies);
+
         const client = new Client()
             .setEndpoint(appwriteConfig.endpointUrl)
             .setProject(appwriteConfig.projectId);
 
-        const session = (await cookies()).get('appwrite-session')
+        // const session = (await cookies()).get('appwrite-session')
+        const session = allCookies.get('appwrite-sessions');
+        console.log('Session cookie:', session);
 
         console.log(`Here is the session Details: ${session}`)
 
         if (!session || !session.value) {
-            throw new Error("There is no session")
+            console.error("Session cookie is missing or has no value");
+            throw new Error("There is no session");
         }
 
         client.setSession(session.value)
