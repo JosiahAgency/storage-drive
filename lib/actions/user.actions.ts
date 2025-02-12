@@ -35,8 +35,6 @@ export const sendEmailOTP = async (email: string) => {
             console.log(`Error creating's email token`)
         }
 
-        console.log(`Email OTP sent to ${email}`);
-
         return session.userId;
 
     } catch (error) {
@@ -80,16 +78,16 @@ export const verifySecret = async ({ accountId, password }: { accountId: string,
         const { account } = await createAdminClient();
 
         const session = await account.createSession(accountId, password);
-        console.log('Session created:', session);
 
         const cookieStore = await cookies();
+
         cookieStore.set('appwrite-sessions', session.secret, {
             path: '/',
             httpOnly: true,
             sameSite: 'strict',
             secure: true,
+
         });
-        console.log('Session cookie set:', session.secret);
 
         return parseStringify({ sessionId: session.$id })
 

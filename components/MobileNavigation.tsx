@@ -46,7 +46,7 @@ const MobileNavigation = ({ $id:ownerId, accountId, fullName, avatar, email }: P
                 <p className='subtitle-2 capitalize'>
                   {fullName}
                 </p>
-                <p className="caption">{email}</p>
+                <p className="caption truncate">{email}</p>
               </div>
             </div>
             <Separator className='mb-4 bg-light-200/20' />

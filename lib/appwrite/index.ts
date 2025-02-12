@@ -6,20 +6,15 @@ import { cookies } from "next/headers";
 
 export const createSessionClient = async () => {
     try {
-        console.log('Creating a new session client...')
 
         const allCookies = await cookies();
-        console.log('All cookies:', allCookies);
 
         const client = new Client()
             .setEndpoint(appwriteConfig.endpointUrl)
             .setProject(appwriteConfig.projectId);
 
-        // const session = (await cookies()).get('appwrite-session')
         const session = allCookies.get('appwrite-sessions');
-        console.log('Session cookie:', session);
 
-        console.log(`Here is the session Details: ${session}`)
 
         if (!session || !session.value) {
             console.error("Session cookie is missing or has no value");
@@ -28,7 +23,6 @@ export const createSessionClient = async () => {
 
         client.setSession(session.value)
 
-        console.log(`Here is the session value: ${session.value}`)
 
         return {
             get account() {
@@ -48,7 +42,6 @@ export const createSessionClient = async () => {
 
 export const createAdminClient = async () => {
     try {
-        console.log('Creating a new session client...')
 
         const client = new Client()
             .setEndpoint(appwriteConfig.endpointUrl)
