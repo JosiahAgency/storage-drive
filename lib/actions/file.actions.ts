@@ -124,3 +124,25 @@ export const renameFile = async ({ fileId, name, extension, path }: RenameFilePr
         handleError(error, "We have failed to rename the file");
     }
 }
+
+export const updateFileUsers = async ({ fileId, emails, path }: UpdateFileUsersProps) => {
+    const { databases } = await createAdminClient();
+
+    try {
+        const updatedFile = await databases.updateDocument(
+            appwriteConfig.databaseId,
+            appwriteConfig.filesCollectionId,
+            fileId,
+            {
+                users: emails,
+            }
+        )
+
+        revalidatePath(path)
+
+        return parseStringify(updatedFile)
+
+    } catch (error) {
+        handleError(error, "We have failed to add users to the file");
+    }
+}
