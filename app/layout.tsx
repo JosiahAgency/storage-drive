@@ -9,8 +9,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Storage Drive",
-  description: "Storage Drive",
+  title: "Josiah's Storage Drive",
+  description: "This is George's Storage Drive",
 };
 
 export default function RootLayout({

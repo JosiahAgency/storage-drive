@@ -1,5 +1,4 @@
 'use client'
-
 import React, { useState } from 'react'
 import {
     Dialog,
@@ -100,6 +99,14 @@ const ActionDropdown = ({ file }: { file: Models.Document }) => {
 
                     {value === 'share' &&
                         <ShareInput file={file} onInputChange={setemails} onRemove={handleRemoveUser} />
+                    }
+
+                    {value === 'delete' && (
+                        <>
+                            <p className="delete-confirmation">Are you sure you want to delete{` `}
+                                <span className="delete-file-name">{file.name}</span>?
+                            </p>
+                        </>)
                     }
 
                 </DialogHeader>
